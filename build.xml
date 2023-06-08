@@ -25,11 +25,19 @@
         <javac debug="true" destdir="${build.dir}" classpathref="lib.path.id" encoding="utf-8" includeantruntime="false">
             <compilerarg value="-Xlint:all" />
             <src>
+                <pathelement location="java-custom-user-authenticator-and-suppliers/dataikucustomauthenticatorandusersupplier" />
+                <pathelement location="java-custom-user-authenticators/dataikucustomauthenticator" />
                 <pathelement location="java-custom-user-suppliers/dataikucustomauthsample" />
             </src>
         </javac>
         <jar destfile="${dist.dir}/dss-plugin-dataiku-custom-auth-sample.jar">
             <fileset dir="${build.dir}" />
+            <fileset dir="java-custom-user-authenticator-and-suppliers/dataikucustomauthenticatorandusersupplier/src/">
+                <include name="**/*.yaml"/>
+            </fileset>
+            <fileset dir="java-custom-user-authenticators/dataikucustomauthenticator/src/">
+                <include name="**/*.yaml"/>
+            </fileset>
             <fileset dir="java-custom-user-suppliers/dataikucustomauthsample/src/">
                 <include name="**/*.yaml"/>
             </fileset>
