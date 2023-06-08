@@ -1,0 +1,13 @@
+/* This file is the descriptor for the java user authenticator and supplier dataikucustomauthenticatorandusersupplier */
+{
+    "meta" : {
+        // label: name of the user authenticator and supplier as displayed, should be short
+        "label": "Custom user authenticator and supplier dataikucustomauthenticatorandusersupplier",
+
+        // description: longer string to help end users understand what this user authenticator and supplier is
+        "description": "",
+
+        // icon: must be one of the FontAwesome 3.2.1 icons, complete list here at https://fontawesome.com/v3.2.1/icons/
+        "icon": "icon-puzzle-piece"
+    }
+}
