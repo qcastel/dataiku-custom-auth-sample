@@ -26,12 +26,14 @@ public class SampleCustomAuthenticatorAndUserSupplier implements CustomUserAuthe
     public SampleCustomAuthenticatorAndUserSupplier() {
         UserAttributes alice = new UserAttributes();
         alice.email = "alice@dataiku.com";
+        alice.login = "alice";
         alice.displayName = "Alice";
         alice.sourceGroupNames.add("admin");
         alice.sourceGroupNames.add("i-team");
         users.add(alice);
 
         UserAttributes bob = new UserAttributes();
+        bob.login = "bob";
         bob.email = "bob@dataiku.com";
         bob.displayName = "Bob";
         bob.sourceGroupNames.add("i-team");

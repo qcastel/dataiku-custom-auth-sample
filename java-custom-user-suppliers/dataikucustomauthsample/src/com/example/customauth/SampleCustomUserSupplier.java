@@ -22,6 +22,7 @@ public class SampleCustomUserSupplier implements CustomUserSupplier {
     
     public SampleCustomUserSupplier() {
         UserAttributes alice = new UserAttributes();
+        alice.login = "alice";
         alice.email = "alice@dataiku.com";
         alice.displayName = "Alice";
         alice.sourceGroupNames.add("admin");
@@ -29,6 +30,7 @@ public class SampleCustomUserSupplier implements CustomUserSupplier {
         users.add(alice);
 
         UserAttributes bob = new UserAttributes();
+        bob.login = "bob";
         bob.email = "bob@dataiku.com";
         bob.displayName = "Bob";
         bob.sourceGroupNames.add("i-team");
